@@ -26,7 +26,7 @@ export default class Settings extends Component {
     }
 
     firstFunc = () => {
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.props.route.params.cityName}&appid=64e633162a6f402b163d49d7596fb69f&lang=tr`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.props.route.params.cityName}&appid={YOUR_API_KEY}&lang=tr`)
             .then(getData => getData.json())
             .then(data => this.setState({
                 city: data.name + " / ",
@@ -41,7 +41,7 @@ export default class Settings extends Component {
     }
 
     secondFunc = () => {
-        fetch(`https://api.weatherapi.com/v1/forecast.json?key=068a26929e8d4643b42191907230704&q=${this.props.route.params.cityName}&days=4&aqi=no&alerts=no`)
+        fetch(`https://api.weatherapi.com/v1/forecast.json?key={YOUR_API_KEY}&q=${this.props.route.params.cityName}&days=4&aqi=no&alerts=no`)
             .then(val => val.json())
             .then(getVal => {
                 this.setState({
