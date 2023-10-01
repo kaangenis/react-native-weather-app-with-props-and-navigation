@@ -13,3 +13,4 @@
 -Basit error catch işlemi yapılmıştır.
 
 -Proje videosu: https://www.youtube.com/shorts/XufbICrmcxs
+
